@@ -10,6 +10,9 @@ liz.kalina@gmail.com
 Anna Rasshivkina
 annarasshivinka@gmail.com
 
+#Description 
+[...]
+
 #Technologies Used
 - Words API
 - WikiLyric API
@@ -17,4 +20,7 @@ annarasshivinka@gmail.com
 - Underscore.js
 - Ajax
 - Bootstrap
+
+#Resources 
 - APIs and JSON lab: https://learn.co/lessons/16229
+
