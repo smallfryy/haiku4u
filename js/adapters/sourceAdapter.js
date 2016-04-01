@@ -6,14 +6,15 @@ app.source.adapter = {
       dataType : "JSONP"})
     .then( 
       function(data){
-      var id = Object.keys(data.query.pages);
-      var extract = data.query.pages[id].extract;
-      var title = data.query.pages[id].title;
-      var obj = new app.source.new(title,extract);
-      debugger
-      // console.log(obj)
-      return obj;
-      })
-
+      var id; 
+      var extract;
+      var title;
+      var object;
+      id = Object.keys(data.query.pages);
+      extract = data.query.pages[id].extract;
+      title = data.query.pages[id].title;
+      object = new app.source.new(title,extract);
+      return object;
+    })()
   }
 }

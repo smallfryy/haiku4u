@@ -3,7 +3,8 @@ app.source.controller = {
     $('#submit').on('click',function(event){
       event.preventDefault();
       var topic = $('#haiku_topic').val();
-      app.source.adapter.findBy(topic);
+      var whatever = app.source.adapter.findBy(topic);
+      debugger
     })
   }
 }
