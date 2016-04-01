@@ -7,11 +7,11 @@
 //   ...
 // }
 
-app.wordBank = {
+app.word = {
   all: [],
   new: (function() {
     var counter = 0;
-    return function WordBank(phraseBank) {
+    return function Word(phraseBank) {
       this.phraseBank = phraseBank;
       var self = this;
       (function init(){

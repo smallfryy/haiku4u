@@ -3,10 +3,14 @@ javascripts:
   files:
     - js/lib/jquery-2.1.1.min.js
     - js/lib/underscore.min.js
-    - js/models/haiku.js
     - js/models/source.js
+    - js/models/word.js
+    - js/models/haiku.js
+    - js/adapters/haikuAdapter.js
+    - js/adapters/sourceAdapter.js
     - js/controllers/haikuController.js
     - js/controllers/sourceController.js
+    - js/controllers/wordController.js
   # specs:
   #   - spec/jasmine-jquery.js
   #   - spec/spec.helper.js
