@@ -1,0 +1,16 @@
+# A list of javascript files required for the project, in dependency order
+javascripts:
+  files:
+    - js/lib/jquery-2.1.1.min.js
+    - js/lib/underscore.min.js
+    - js/models/haiku.js
+    - js/models/source.js
+    - js/controllers/haikuController.js
+    - js/controllers/sourceController.js
+  # specs:
+  #   - spec/jasmine-jquery.js
+  #   - spec/spec.helper.js
+  #   - spec/task.spec.js
+  #   - spec/list.spec.js
+  #   - spec/lists.controller.spec.js
+  #   - spec/tasks.controller.spec.js

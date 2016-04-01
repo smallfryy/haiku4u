@@ -8,7 +8,7 @@ Liz Kalina
 liz.kalina@gmail.com
 
 Anna Rasshivkina
-</email here>
+annarasshivinka@gmail.com
 
 #Technologies Used
 - Words API
