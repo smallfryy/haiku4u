@@ -1,4 +1,4 @@
-#Haiku4u: a random Haiku generator for your lyrical pleasure. 
+#Data Haiku
 
 #Code Poets
 Holly Peck 
@@ -10,8 +10,10 @@ liz.kalina@gmail.com
 Anna Rasshivkina
 annarasshivinka@gmail.com
 
-#Description 
-[...]
+#Description
+Data Haiku is anti-haiku. 
+https://en.wikipedia.org/wiki/Dada 
+
 
 #Technologies Used
 - Words API
