@@ -1,6 +1,6 @@
 #Haiku4u: a random Haiku generator for your lyrical pleasure. 
 
-#Radicals 
+#Code Poets
 Holly Peck 
 holly.m.peck@gmail.com
 
