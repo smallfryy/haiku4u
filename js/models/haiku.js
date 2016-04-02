@@ -24,7 +24,7 @@ app.haiku = {
   adapter:{
     // adapter here 
     getBy: function(name){
-      $.ajac({
+      $.ajax({
         method: "GET",
         URL: "....."
       })
