@@ -5,11 +5,12 @@ app.word.adapter = {
     // create function toLowerCase();
     var words = _.uniq(allWords);
     var shuffle = _.shuffle(words);
-    //loop over each word!
+    // loop over each word!
     _.each(words,function(word){
       var url = 'http://rhymebrain.com/talk?function=getWordInfo&word=' + word;
       $.ajax({
       url: url,
+      async: false,
       type:'GET',
       dataType : "JSON"
       })

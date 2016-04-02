@@ -13,7 +13,7 @@ app.word = {
       }());
     }
   }()),
-  findBy : function(attrHash){ // format: {'sourceId',2}
+  findBy : function(attrHash){ // format: {'sourceId':2}
     return _.where(app.word.all,attrHash);
   }
 }

@@ -4,17 +4,22 @@ app.source.controller = {
       event.preventDefault();
       var topic = $('#haiku_topic').val();
       
-      var promise = app.source.adapter.findBy(topic);
-      
-      promise.then(function(sourceObj){
+      app.source.adapter.getBy(topic)
+      .then(function(sourceObj){
         return app.word.adapter.queryWords(sourceObj)
-      }).then(function(data){
-        var sourceId = data;
-        var words = app.word.findBy({'sourceId':sourceId})
-        debugger
       })
-
-      // app.haiku.generate(sourceId);
+      .then(function(data){
+        var sourceId = data;
+        return app.haiku.generate(sourceId);
+      })
+      .then(function(data){
+        debugger
+        //data = haiku instance
+        //need to call render function
+      })
     })
+  },
+  render : function(){
+    
   }
 }

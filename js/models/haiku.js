@@ -6,7 +6,6 @@
 // ]
 // topic: "sports"
 
-
 app.haiku = {
   all: [],
   new: (function() {
@@ -22,6 +21,13 @@ app.haiku = {
     }
   }()), 
   generate : function(sourceId){
-    // debugger
+    var words = app.word.findBy({'sourceId':sourceId})
+    var topic = app.source.findBy({'id':sourceId}).topic;
+    //1. call logic function to return haiku lines
+    //2. create/return new haiku instance
+    return new app.haiku.new(topic,["1","2"])
+  },
+  logic : function(wordObjects){
+    //NEED TO WRITE HAIKU LOGIC FUNCTION
   }
 }
