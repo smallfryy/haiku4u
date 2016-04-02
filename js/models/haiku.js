@@ -21,13 +21,7 @@ app.haiku = {
       }());
     }
   }()), 
-  adapter:{
-    // adapter here 
-    getBy: function(name){
-      $.ajax({
-        method: "GET",
-        URL: "....."
-      })
-    }
+  generate : function(sourceId){
+    // debugger
   }
 }

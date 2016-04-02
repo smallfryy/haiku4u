@@ -1,12 +1,3 @@
-// phrase_bank = {
-//   "adverb-verb": {
-//     4: ["phrase", "phrase", "phrase"],
-//     5: ["phrase", "phrase", "phrase"],
-//     6: ["phrase", "phrase", "phrase"]  
-//   }
-//   ...
-// }
-
 app.word = {
   all: [],
   new: (function() {
