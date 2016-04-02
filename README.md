@@ -1,4 +1,4 @@
-#Data Haiku
+#Data(ist) Haiku
 
 #Code Poets
 Holly Peck 
@@ -11,9 +11,8 @@ Anna Rasshivkina
 annarasshivinka@gmail.com
 
 #Description
-Data Haiku is anti-haiku. 
+Data(ist) Haiku is anti-haiku generator of poems from Wikipedia articles.
 https://en.wikipedia.org/wiki/Dada 
-
 
 #Technologies Used
 - Words API
