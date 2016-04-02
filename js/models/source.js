@@ -1,12 +1,11 @@
-// adapter model?
+//
 app.source = {
   all: [],
   new: (function() {
     var counter = 0;
-    return function Source(title,extract,topic) {
-      this.title = title;
-      this.extract = extract;
+    return function Source(topic,extract) {
       this.topic = topic;
+      this.extract = extract;
       var self = this;
       (function init(){
         self.id = ++counter;
@@ -14,7 +13,7 @@ app.source = {
       }());
     }
   }()),
-  findBy : function(attrHash){ // format: {'id':2}
+  findBy : function(attrHash) { // format: {'id':2}
     return _.findWhere(app.source.all,attrHash);
   }
 }

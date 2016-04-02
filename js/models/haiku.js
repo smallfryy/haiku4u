@@ -1,7 +1,7 @@
 // Haiku {topic: "sports", lines: Array[3], id: 1}
 // lines: [
-// "homoerotic", 
-// "football endline sucks, hard knocks", 
+// "homoerotic",
+// "football endline sucks, hard knocks",
 // "I am gay for you"
 // ]
 // topic: "sports"
@@ -19,15 +19,37 @@ app.haiku = {
         app.haiku.all.push(self);
       }());
     }
-  }()), 
+  }()),
   generate : function(sourceId){
-    var words = app.word.findBy({'sourceId':sourceId})
+    var words = app.word.findBy({'sourceId':sourceId});
     var topic = app.source.findBy({'id':sourceId}).topic;
-    //1. call logic function to return haiku lines
-    //2. create/return new haiku instance
-    return new app.haiku.new(topic,["1","2"])
+
+    var line1 = [];
+    app.haiku.generateLine(words, line1, 0, 5);
+    var finalLine1 = line1.join(" ");
+
+    var line2 = [];
+    app.haiku.generateLine(words, line2, 0, 7);
+    var finalLine2 = line2.join(" ");
+
+    var line3 = [];
+    app.haiku.generateLine(words, line3, 0, 5);
+    var finalLine3 = line3.join(" ");
+
+    return new app.haiku.new(topic,[finalLine1, finalLine2, finalLine3]);
   },
-  logic : function(wordObjects){
-    //NEED TO WRITE HAIKU LOGIC FUNCTION
+  generateLine : function(words, line, syllables, desiredSyll) {
+    if (syllables === desiredSyll) {
+      return line;
+    }
+    var word = words.shift();
+    if (word.syllables + syllables <= desiredSyll) {
+      line.push(word.word);
+      syllables += word.syllables;
+    }
+    else {
+      words.push(word);
+    }
+    app.haiku.generateLine(words, line, syllables, desiredSyll);
   }
 }
