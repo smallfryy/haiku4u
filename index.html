@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div class="jumbotron">
-    <div class="container" text="center">
+  <div class="jumbotron vertical-center">
+    <div class="container">
+    <div class="row text-center">
       <h1>Data(ist) Haiku</h1>
       <form id="haiku_form">
       <label for="haiku_topic"><h4>What do you want a haiku about?</h4></label><br>
@@ -22,9 +23,13 @@
       <button id="submit" type="submit">Submit</button>
       </form>
     </div>
+    <!-- we could add haiku in same container -->
+
+
+  </div>
   </div>
 
-  <div class="container">
+  <div class="container-haiku">
     <ul class="haikus">
       
     </ul>

@@ -1,0 +1,19 @@
+body {
+  background-image: url("https://qph.is.quoracdn.net/main-qimg-ba994a5772f088d58160b274be3d97ef?convert_to_webp=true");
+}
+
+.jumbotron{
+  background-image: url("https://qph.is.quoracdn.net/main-qimg-ba994a5772f088d58160b274be3d97ef?convert_to_webp=true");
+  width: 100%;
+  text-align: center;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 80%;
+
+}
