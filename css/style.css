@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+}
+
+.jumbotron {
+  background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("https://static1.squarespace.com/static/54179d62e4b0af003a219a13/544d5ec0e4b05929edba7329/544d5f0fe4b0ddfd0e5ff790/1414356760604/plants_horizon_500.gif");
+  /*background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("http://i.giphy.com/l4hLVJEQU3oxJNvVe.gif");*/
+  background-position: top -30px right;
+  background-size: cover;
+  border-bottom: 3px solid #494949;
+  height: 50%;
+  width: 100%;
+}
+
+.jumbo-content {
+  border-radius: 25px;
+  padding: 10px 30px 30px 30px;
+}
+
+.heading {
+  font-family: 'Fredericka the Great';
+}
+
+.subheading, .btn, p {
+  font-family: 'Open Sans';
+}
+
+.haikus > p {
+  font-family: 'Open Sans';
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+}
+
+button {
+  background: #fff;
+  border: none;
+  color: #999;
+  padding: 5px 10px 5px 10px;
+}

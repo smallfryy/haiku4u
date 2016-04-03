@@ -5,29 +5,34 @@
 <meta charset="UTF-8">
   <title>Data Haiku</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,400ß|Raleway|Work+Sans|Calligraffiti' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="text/css" href="css/style.css">
 </head>
 
 <body>
 
   <div class="jumbotron">
-    <div class="container" text="center">
-      <h1>Data(ist) Haiku</h1>
-      <form id="haiku_form">
-      <label for="haiku_topic"><h4>What do you want a haiku about?</h4></label><br>
-      <input id="haiku_topic" placeholder="ex. Marcel Duchamp"><br><br>
-      <button id="submit" type="submit">Submit</button>
-      </form>
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-1">
+        <div class="jumbo-content">
+          <h1 class="heading">Data(ist) Haiku</h1>
+
+          <form id="haiku_form" class="form-inline">
+          <label for="haiku_topic"><h4 class="subheading">What do you want a haiku about?</h4></label><br>
+          <input id="haiku_topic" class="form-control" placeholder=" ex. Marcel Duchamp"><br><br>
+          <button id="submit" class="btn btn-lg" type="submit">Generate</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="container">
-    <ul class="haikus">
-      
-    </ul>
+    <div class="haikus">
+    </div>
   </div>
 
 
