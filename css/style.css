@@ -26,7 +26,6 @@ html, body {
 }
 
 .haikus > p {
-  font-family: 'Open Sans';
   font-size: 2em;
   font-weight: 300;
   text-align: center;
