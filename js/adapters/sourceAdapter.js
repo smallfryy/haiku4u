@@ -12,9 +12,14 @@ app.source.adapter = {
       function(data){
         var id = Object.keys(data.query.pages);
         var extract = data.query.pages[id].extract;
-        var object = new app.source.new(topic,extract);
-        return object;
-        // source = { extract: "Eleanor Kagan....", id: 1, topic: "Billie Holiday" }
+        if (extract) {
+          var sourceObject = new app.source.new(topic,extract);
+          return sourceObject;
+          // sourceObject = { extract: "Eleanor Kagan....(~500 wds)", id: 1, topic: "Billie Holiday" }
+        }
+        else {
+          return false;
+        }
     })
   }
 }

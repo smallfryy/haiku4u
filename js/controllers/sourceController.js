@@ -6,6 +6,10 @@ app.source.controller = {
       var topic = $('#haiku_topic').val();
       app.source.adapter.getBy(topic)
       .then(function(sourceObj){
+        if (sourceObj === false) {
+          alert("Search returned nothing— \nPerhaps you misspelled something? \nSecond time's the charm.");
+          throw new Error("misspelled search");
+        }
         return app.word.adapter.queryWords(sourceObj)
       })
       .then(function(sourceId){
@@ -17,9 +21,9 @@ app.source.controller = {
     })
   },
   render : function(haiku){
-    $('.haikus').text("");
+    $('#haiku-space').text("");
     _.each(haiku.lines, function(line) {
-      $('.haikus').append("<p>" + line + "\n </p>");
+      $('#haiku-space').append("<p>" + line + "\n </p>");
     })
   }
 }
