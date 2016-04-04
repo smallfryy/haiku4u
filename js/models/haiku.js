@@ -1,11 +1,3 @@
-// Haiku {topic: "sports", lines: Array[3], id: 1}
-// lines: [
-// "homoerotic",
-// "football endline sucks, hard knocks",
-// "I am gay for you"
-// ]
-// topic: "sports"
-
 app.haiku = {
   all: [],
   new: (function() {
@@ -24,21 +16,14 @@ app.haiku = {
     var words = app.word.findBy({'sourceId':sourceId});
     var topic = app.source.findBy({'id':sourceId}).topic;
 
-    var line1 = [];
-    app.haiku.generateLine(words, line1, 0, 5);
-    var finalLine1 = line1.join(" ");
+    var line1 = app.haiku.generateLine(words, [], 0, 5).join(" ");
+    var line2 = app.haiku.generateLine(words, [], 0, 7).join(" ");
+    var line3 = app.haiku.generateLine(words, [], 0, 5).join(" ");
 
-    var line2 = [];
-    app.haiku.generateLine(words, line2, 0, 7);
-    var finalLine2 = line2.join(" ");
-
-    var line3 = [];
-    app.haiku.generateLine(words, line3, 0, 5);
-    var finalLine3 = line3.join(" ");
-
-    return new app.haiku.new(topic,[finalLine1, finalLine2, finalLine3]);
+    return new app.haiku.new(topic,[line1, line2, line3]);
   },
   generateLine : function(words, line, syllables, desiredSyll) {
+
     if (syllables === desiredSyll) {
       return line;
     }
@@ -50,6 +35,6 @@ app.haiku = {
     else {
       words.push(word);
     }
-    app.haiku.generateLine(words, line, syllables, desiredSyll);
+    return app.haiku.generateLine(words, line, syllables, desiredSyll);
   }
 }

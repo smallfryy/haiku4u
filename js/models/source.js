@@ -1,4 +1,3 @@
-//
 app.source = {
   all: [],
   new: (function() {

@@ -2,7 +2,6 @@ app.word.adapter = {
   queryWords : function(source){
     var sourceId = source.id;
     var allWords = source.extract.replace(/\(.*\)|[^a-zA-Z\s]/g,' ').split(' ');
-    // var allWords = source.extract.replace(/[0-9&\/\\#,+()↵$^~%.'":*?<>{}-]/g,'').split(' ');
     var shuffled = _.chain(allWords).uniq().shuffle()._wrapped.slice(0,27);
 
     _.each(shuffled,function(word){
