@@ -11,7 +11,6 @@ app.source.adapter = {
     .then(
       function(data){
         var id = Object.keys(data.query.pages);
-        debugger
         var extract = data.query.pages[id].extract;
         if (extract) {
           var sourceObject = new app.source.new(topic,extract);

@@ -1,9 +1,8 @@
 app.word.adapter = {
   queryWords : function(source){
     var sourceId = source.id;
-    var allWords = source.extract.replace(/\(.*\)|[^a-zA-Z\s]/g,' ').replace(/(\r\n|\n|\r)/gm,' ').split(' ');
+    var allWords = source.extract.replace(/\(.*\)|\n|[^a-zA-Z\s]/g,' ').split(' ');
     var shuffled = _.chain(allWords).uniq().shuffle()._wrapped.slice(0,27);
-    debugger
 
     _.each(shuffled,function(word){
       var url = 'http://rhymebrain.com/talk?function=getWordInfo&word=' + word;
