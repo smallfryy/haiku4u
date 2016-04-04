@@ -5,9 +5,7 @@ $(function() { // on document ready
   app.controller.init();
 
   $("#footer").click(function(){
-    $('#about').animate({
-      height:'52%'
-    });
+    $('#about').slideToggle("slow");
   });
     
 });
