@@ -71,6 +71,24 @@ button {
   font-size: 14px;
 }
 
+#about{
+  background-color: white;
+  bottom: 40px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  height: 0px;
+  margin-bottom: 40px;
+  overflow:  hidden;
+  position: fixed;
+  transition: height .3s ease;
+  width: 100%;
+}
+
+.about-heading {
+  font-family: 'Special Elite';
+  font-size: 40px;
+}
+
 
 
 @media (max-width: @screen-xs) {
