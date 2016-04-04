@@ -4,13 +4,14 @@ app.source.adapter = {
       return word[0].toUpperCase() + word.slice(1);
     }).join(' ');
     return $.ajax({
-      url: 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=' + topic,
+      url: 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&explaintext=&titles=' + topic,
       async: false,
       type: 'GET',
       dataType : 'JSONP'})
     .then(
       function(data){
         var id = Object.keys(data.query.pages);
+        debugger
         var extract = data.query.pages[id].extract;
         if (extract) {
           var sourceObject = new app.source.new(topic,extract);
