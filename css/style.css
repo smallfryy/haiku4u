@@ -5,8 +5,11 @@ html {
 }
 
 .jumbotron {
-  background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("https://static1.squarespace.com/static/54179d62e4b0af003a219a13/544d5ec0e4b05929edba7329/544d5f0fe4b0ddfd0e5ff790/1414356760604/plants_horizon_500.gif");
+  background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) );
   /*background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("http://i.giphy.com/l4hLVJEQU3oxJNvVe.gif");*/
+  /*unsure how to make this repeat but here's the image*/
+  background-image: url("https://qph.is.quoracdn.net/main-qimg-ba994a5772f088d58160b274be3d97ef?convert_to_webp=true");
+  background-repeat: repeat-y;
   background-position: top 13% right;
   background-size: cover;
   border-bottom: 3px solid #494949;
