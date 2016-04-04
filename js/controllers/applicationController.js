@@ -1,4 +1,4 @@
-app.source.controller = {
+app.controller = {
   init : function(){
     $('#submit').on('click',function(event){
       event.preventDefault();
@@ -16,7 +16,7 @@ app.source.controller = {
         return app.haiku.generate(sourceId);
       })
       .then(function(haiku){
-        app.source.controller.render(haiku);
+        app.controller.render(haiku);
       })
     })
   },

@@ -6,6 +6,6 @@ javascripts:
     - js/models/source.js
     - js/models/word.js
     - js/models/haiku.js
-    - js/controllers/sourceController.js
+    - js/controllers/applicationController.js
     - js/adapters/wordAdapter.js
     - js/adapters/sourceAdapter.js
