@@ -21,9 +21,9 @@ app.source.controller = {
     })
   },
   render : function(haiku){
-    $('#haiku-space').text("");
+    $('#haiku').text("");
     _.each(haiku.lines, function(line) {
-      $('#haiku-space').append("<p>" + line + "\n </p>");
+      $('#haiku').append("<p>" + line + "\n </p>");
     })
   }
 }

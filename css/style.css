@@ -1,5 +1,7 @@
-html, body {
-  height: 100%;
+html {
+  min-height: 100%;
+  padding-bottom: 100px;
+  position: relative;
 }
 
 .jumbotron {
@@ -20,7 +22,7 @@ html, body {
   font-family: 'Fredericka the Great';
 }
 
-.subheading, .btn, p {
+.subheading, .btn {
   font-family: 'Open Sans';
 }
 
@@ -28,13 +30,29 @@ button {
   background: #fff;
 }
 
-.haikus {
+#haiku-space {
   background-image: url('../images/quotation-marks-for-haiku-lg.jpg');
   background-position: center top;
   background-size: cover;
+  font-family: 'Open Sans';
   font-size: 2em;
   font-weight: 300;
-  min-height: 250px !important;
+  min-height: 250px;
   padding-top: 5%;
   text-align: center;
+}
+
+#footer {
+  background: linear-gradient(white, rgba(255, 249, 249, 0.5), rgba(192, 180, 197, 0.3));
+  bottom: 0;
+  font-family: 'Bad Script';
+  height: 40px;
+  margin-top: 80px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+#footer > .pull-right {
+  font-size: 14px;
 }
