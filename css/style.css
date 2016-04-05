@@ -6,8 +6,6 @@ html {
 
 .jumbotron {
   background: url("../images/dada-man.jpg");
-  /*background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("https://static1.squarespace.com/static/54179d62e4b0af003a219a13/544d5ec0e4b05929edba7329/544d5f0fe4b0ddfd0e5ff790/1414356760604/plants_horizon_500.gif");*/
-  /*background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("http://i.giphy.com/l4hLVJEQU3oxJNvVe.gif");*/
   background-position: top 40% right;
   background-size: cover;
   border-bottom: 3px solid #494949;
@@ -53,6 +51,7 @@ button {
   min-height: 250px;
   padding-top: 5%;
   text-align: center;
+  position: relative;
 }
 
 #footer {
@@ -69,6 +68,25 @@ button {
 
 #footer > .pull-right {
   font-size: 14px;
+}
+
+#about{
+  background-color: white;
+  bottom: 40px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  height: 0px;
+  margin-bottom: 40px;
+  /*overflow:  hidden;*/
+  position: relative;
+  /*transition: height .3s ease;*/
+  width: 100%;
+  display: none;
+}
+
+.about-heading {
+  font-family: 'Special Elite';
+  font-size: 40px;
 }
 
 
