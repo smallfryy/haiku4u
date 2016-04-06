@@ -1,6 +1,6 @@
 html {
   min-height: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -60,7 +60,7 @@ button {
   font-family: 'Open Sans';
   font-weight: 300;
   height: 40px;
-  margin-top: 80px;
+  margin-top: 10px;
   padding: 10px 15px;
   position: absolute;
   width: 100%;
@@ -70,31 +70,31 @@ button {
   font-size: 14px;
 }
 
-#about{
+#about {
   background-color: white;
   bottom: 40px;
+  font-family: 'Special Elite';
+  height: 0px;
+  overflow:  hidden;
+  position: absolute;
+  transition: height .4s ease;
+  width: 100%;
+}
+
+#about span {
+  font-size: 17px;
+}
+
+#api-credit {
   font-family: 'Open Sans';
   font-weight: 300;
-  height: 0px;
-  margin-bottom: 40px;
-  /*overflow:  hidden;*/
-  position: relative;
-  /*transition: height .3s ease;*/
-  width: 100%;
-  display: none;
 }
-
-.about-heading {
-  font-family: 'Special Elite';
-  font-size: 40px;
-}
-
 
 
 @media (max-width: @screen-xs) {
 
-  #haiku-space {
-    font-size: 1.5em !important;
-  }
+#haiku-space {
+  font-size: 1.5em !important;
+}
 
 }
