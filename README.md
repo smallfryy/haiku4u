@@ -1,11 +1,9 @@
 #Data(ist) Haiku
-
-#Description
 Data(ist) Haiku is an anti-haiku generator of poems from [Wikipedia articles](https://en.wikipedia.org/wiki/Dada).
  
 ![example](http://g.recordit.co/4OqVMlD8lb.gif)
 
-#Code Poets
+##Code Poets
 Holly Peck 
 holly.m.peck@gmail.com
 
@@ -15,7 +13,7 @@ liz.kalina@gmail.com
 Anna Rasshivkina
 annarasshivinka@gmail.com
 
-#Technology Used
+##Technology Used
 - RhymeBrain API
 - MediaWiki API
 - JavaScript
@@ -23,7 +21,7 @@ annarasshivinka@gmail.com
 - Ajax
 - Bootstrap
 
-#Background
+##Background
 How to Make a Dadaist Poem
 (method of Tristan Tzara)
 
